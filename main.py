@@ -12,7 +12,7 @@ def listdept():
  cursor.execute( "select * from salaries where Department='%s'"%department_name.upper())
  result = {'data': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
  return result
- return 'Hello, World...Will list db soon!'
+ #return 'Hello, World...Will list db soon!'
 
 if __name__ == '__main__':
   app.run()
